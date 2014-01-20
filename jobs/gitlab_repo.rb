@@ -3,8 +3,8 @@ require 'net/http'
 require 'json'
 
 
-gitlab_token = "YOUR TOKEN"
-gitlab_uri = "URL GITLAB"
+gitlab_token = ENV["GITLAB_TOKEN"] || "YOUR TOKEN"
+gitlab_uri = ENV["GITLAB_URL"] || "URL GITLAB"
 # number of repositories to display in the list
 # order the list by the numbers
 ordered = true

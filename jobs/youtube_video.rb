@@ -17,12 +17,12 @@ if false
   SCHEDULER.every '1m', :first_in => 0 do |job|
     http = Net::HTTP.new("gdata.youtube.com")
     response = http.request(Net::HTTP::Get.new("/feeds/api/videos?q=#{youtube_video_id}&v=2&alt=jsonc"))
-  
+
     if response.code != "200"
       puts "youtube api error (status-code: #{response.code})\n#{response.body}"
     else
       videos = JSON.parse(response.body)['data']['items']
-  
+
       if defined?(send_event)
         send_event('youtube_video_rating', current: videos[0]['ratingCount'])
         send_event('youtube_video_views', current: videos[0]['viewCount'])
