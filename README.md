@@ -1,1 +1,4 @@
-Check out http://shopify.github.com/dashing for more information.
+moul-dashboards
+===============
+
+Various dashing dashboard jobs
