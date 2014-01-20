@@ -1,3 +1,7 @@
+history.yml
+Gemfile.lock
+
+
 *.gem
 *.rbc
 .bundle
