@@ -1,0 +1,44 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #808080;
+$title-color:       rgba(255, 255, 255, 0.7);
+$subheading-color:  rgba(255, 255, 255, 0.9);
+
+// ----------------------------------------------------------------------------
+// Widget-unearned-badges styles
+// ----------------------------------------------------------------------------
+.widget-unearned-badges {
+
+  background-color: $background-color;
+  vertical-align: top !important;
+  font-family: "Cabin", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  .title {
+    color: $title-color;
+    font-weight: 500;
+    padding-bottom: 45px;
+  }
+
+  .heading {
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 60px;
+  }
+
+  .subheading {
+    color: $subheading-color;
+    font-size: 22px;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  p > a {
+    text-decoration: underline;
+  }
+
+}

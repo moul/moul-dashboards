@@ -8,3 +8,4 @@ gem 'erubis'
 gem 'json'
 gem 'fitgem'
 gem 'haml'
+gem 'badgeoverflow-core', :git => "https://github.com/sharplet/badgeoverflow-core.git"
