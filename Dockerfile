@@ -13,6 +13,7 @@ RUN gem install bundle
 
 # Install common dependencies
 RUN gem install httparty twitter haml erubis
+RUN apt-get install -y git
 
 WORKDIR /dashing
 
